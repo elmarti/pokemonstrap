@@ -1,0 +1,12 @@
+@import "./config.scss";
+@import "../../node_modules/pokemon-font/css/pokemon-font.css";
+body {
+  background-color: $primary_colour;
+}
+body {
+  font-smooth : never;
+  -webkit-font-smoothing : none;
+  font-family : $base_font;
+  color : $primary_font_colour
+}
+
