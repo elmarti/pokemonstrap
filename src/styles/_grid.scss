@@ -1,0 +1,37 @@
+$total-columns : 12;
+
+@for $i from 1 through $total-columns {
+  .col-#{$i} {
+    @media (max-width: 420px) {
+      width:100%;
+    }
+    width: 8.4 * $i * 1%;
+  }
+}
+.col-fill {
+  @media (max-width: 420px) {
+    width:100%;
+  }
+  flex :1;
+}
+
+.row {
+  @media (max-width: 420px) {
+    display : block;
+    padding : 0;
+  }
+  display : flex;
+  padding : 1em 1em 0 1em;
+}
+
+.row-gutter {
+  [class^="col-"],
+  [class*=" col-"]:not(:first-child):not(:last-child)
+  {
+    @media (min-width: 421px) {
+      margin-left:1em;
+      margin-right:1em;
+    }
+  }
+}
+
