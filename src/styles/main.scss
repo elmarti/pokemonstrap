@@ -1,4 +1,11 @@
 @import "./config.scss";
+
+@import "./grid.scss";
+@import "./nav.scss";
+@import "./parallax.scss";
+@import "./layout.scss";
+@import "./colours.scss";
+
 @import "../../node_modules/pokemon-font/css/pokemon-font.css";
 body {
   background-color: $primary_colour;
@@ -7,6 +14,8 @@ body {
   font-smooth : never;
   -webkit-font-smoothing : none;
   font-family : $base_font;
-  color : $primary_font_colour
+  color : $primary_font_colour;
+  margin : 0px;
+  padding-top:70px;
 }
 

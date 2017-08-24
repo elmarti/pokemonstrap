@@ -21,13 +21,13 @@ $total-columns : 12;
     padding : 0;
   }
   display : flex;
-  padding : 1em 1em 0 1em;
 }
 
 .row-gutter {
   [class^="col-"],
   [class*=" col-"]:not(:first-child):not(:last-child)
   {
+    padding : 1em 1em 0 1em;
     @media (min-width: 421px) {
       margin-left:1em;
       margin-right:1em;
