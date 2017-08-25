@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="../node_modules/pokemon-font/css/pokemon-font.css"/>
   </head>
-  <body>
-  <nav class="navigation">
+  <body id="first">
+  <nav class="navigation" >
     <div class="nav-container">
       <div class="brand">
         <a href="/">POKéMON</a>
@@ -18,10 +18,10 @@
         <input type="checkbox" id="nav-state"/>
         <ul class="nav-list">
           <li>
-            <a href="#!">Home</a>
+            <a scroll="translateY( -500px )" class="scroll-to">first</a>
           </li>
           <li>
-            <a href="#!">About</a>
+            <a scroll="translateY( -500px )" class="scroll-to">second</a>
           </li>
           <li>
             <a href="#!">Services</a>
@@ -61,7 +61,7 @@
       </nav>
     </div>
   </nav>
-    <section class="animate bg1 fullheight">
+    <section class="animate bg1 fullheight" >
       <div class="row fillheight">
         <div class="col-6 fillheight background-tertiary">
           dave
@@ -71,7 +71,7 @@
         </div>
       </div>
     </section>
-  <section class="animate bg1 fullheight">
+  <section class="animate bg1 fullheight" id="second">
     <div class="row fillheight background-tertiary">
       <div class="col-6 background-primary fillheight">
         dave
